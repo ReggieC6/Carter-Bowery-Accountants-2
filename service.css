@@ -1,0 +1,248 @@
+
+.servicesTwo{
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: #c29525;
+    font-family: 'Barlow Condensed', serif; 
+    /*font-family: 'Bad Script', cursive;
+    font-family: 'Federo', sans-serif;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Loved by the King', cursive;
+    font-family: 'Merienda One', cursive;
+    /*font-family: 'Righteous', cursive;
+    font-family: 'Shadows Into Light', cursive; */
+}
+
+.containerTwo {
+    margin: 1rem;
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTwo .box2 {
+    position: relative;
+    height: 50rem;
+    width: 25%;
+    background: #c29525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+}
+
+.containerTwo .box2:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    right: -2px;
+    bottom: -2px ;
+    background: whitesmoke;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+
+.containerTwo .box2:nth-child(1):before {
+    background: linear-gradient(315deg,#0f4675,#0f4675);
+}
+
+.containerTwo .box2:nth-child(2):before {
+    background: linear-gradient(315deg,#0f4675,#0f4675);
+}
+
+.containerTwo .box2:nth-child(3):before {
+    background: linear-gradient(315deg,#0f4675,#0f4675);
+}
+
+.containerTwo .box2:nth-child(4):before {
+    background: linear-gradient(315deg,#0f4675,#0f4675);
+}
+
+.containerTwo .box2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05); 
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box2 .content h2 {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.box2:hover .content h2 {
+    top: -40px;
+}
+
+.box2 .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.box2 .content p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box2 .content a {
+    position: relative;
+    margin: 20px 80px 0;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    width: 45%;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    display: inline-flex;
+    color: whitesmoke;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.box2:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box2 .content a:hover {
+    color: #000;
+    background: whitesmoke;
+}
+
+@media screen and (max-width: 1024px) {
+    .containerTwo {
+      width: 100%;
+      display: grid;
+      margin-bottom: 20px;
+      grid-gap: 0rem 5rem;
+    }
+    
+    .containerTwo .box2 {
+        position: relative;
+        height: 35rem;
+        width: 100%;
+        background: #c29525;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #000;
+    }
+
+    .box2 .content h3 {
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 3rem;
+        color: whitesmoke;
+    }
+
+    .box2 .content p {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .box2 .content a {
+        position: relative;
+        margin: 20px 0 0;
+        padding: 10px 20px;
+        font-size: .75rem;
+        text-decoration: none;
+        border: 1px solid whitesmoke;
+        display: inline-flex;
+        color: whitesmoke;
+        transition: 0.5s;
+        transform: translateY(-40px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+  }
+
+
+@media screen and (max-width: 600px) {
+    .containerTwo {
+      width: 100%;
+      display: grid;
+      margin-bottom: 20px;
+      grid-gap: 2.5rem 0;
+    }
+    
+    .containerTwo .box2 {
+        position: relative;
+        height: 35rem;
+        width: 100%;
+        background: #c29525;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #000;
+    }
+
+    .box2 .content h3 {
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+
+    .box2 .content p {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .box2 .content a {
+        position: relative;
+        margin: 20px 0 0;
+        padding: 10px 20px;
+        font-size: .75rem;
+        text-decoration: none;
+        border: 1px solid whitesmoke;
+        display: inline-flex;
+        color: whitesmoke;
+        transition: 0.5s;
+        transform: translateY(-40px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+  }
